@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="logo.png" class="logo" />
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm <span>Janu Singh</span></h1>
+          <br />
+          <p>Web Developer</p>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="my-img1.png.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <br />
+            <p>
+              I have an overall CGPA of 8.2 as an undergraduate student studying computer science at JAYPEE UNIVERSITY OF ENGINEERING and TECHNOLOGY, Guna. I am constantly learning new things and improving my knowledge of different web technologies and programming languages. I'm a passionate student of web development and can't wait to learn about and explore the wide field of web development. In search of a challenging job where I can combine my expertise in software engineering with a focus on professional growth.
+            </p>
+            <br />
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages</span><br />Python,C++,C,Html,Css,Javascript
+                </li>
+                <br />
+                <li>
+                  <span>Tools</span><br />VS code
+                </li>
+                <br />
+               
+              </ul>
+              <br />
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Upcoming Web Developer intern and Mach</span
+                  ><br />@Octanet
+                
+                </li>
+                <br />
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Jaypee University of Engineering and Technology</span
+                  ><br />Bachelor of Technology in Computer Science and
+                  Engineering(CGPA 8.2)
+                </li>
+                <li>
+                  <span>Sardar Patel Higher Secondary School</span
+                  ><br />Intermediate(94.2%)
+                </li>
+                <li>
+                  <span>Sardar Patel Higher Secondary School</span
+                  ><br />High School(94%)
+                </li>
+                <br />
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--potfolio-->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <br />
+        
+        <h3>Web Development Tasks:</h3>
+        <br />
+        <p>
+          Landing page<br>
+          To Do List<br>
+          Homepage of Netflix<br>
+        </p>
+        <br>
+        <br>
+        <br>
+
+       
+      </div>
+    </div>
+
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact">
+                <h1 class="sub-title">Contact Me</h1>
+                <br>
+                <br>
+                <p>Gmail - janusinghspumv@gmail.com</p>
+                <p>Contact No. - 9343438546</p>
+                <br>
+                <br>
+                <div class="social-icons">
+                    <a href="https://github.com/singh13janu"><img src="github.png" width="50" height="50" alt="GitHub" /></a>
+                    <a href="http://linkedin.com/in/janu-singh-6a11a3232"><img src="linkedin.png" width="50" height="50" alt="LinkedIn" /></a>
+                </div>
+                <br>
+                <br>
+                <a href="My_Resume.pdf" download class="btn btn1">Download Resume</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Janu. Made with &hearts; by Janu. </p>
+    </div>
+</div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
